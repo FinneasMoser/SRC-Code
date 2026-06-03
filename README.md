@@ -1,10 +1,12 @@
 #### Normal stacking stuff
 * For QSO and LAE catalogues respectively: trimmed each catalogue to the COMAP fields (with small amount of padding), removed duplicates (objects within 5 arcsec and 0.001 z were considered close enough to be duplicates)
-* Ran a stack on these catalogues for each frequency in our frequency bin 
+* Ran a stack on these catalogues for each frequency in our frequency bin
+* Used this to calculate axion mass limits in `flux_to_g.ipynb`
 
 #### DM Mass stuff
 * Added mass as an acceptible unit in lim_stacker
 * Generated halo mass map + cat from `COMAP_z2.39-3.44_1140Mpc_seed_13585.npz` and stacked on it.
+* Used this to calculate axion mass limits in `flux_to_g.ipynb`
 
 #### Bootstrap stuff
 * Created bootstraps for both QSOs and LAEs across 100-101 GHz (0.1 step) using obj counts from stacking at each respective frequency
